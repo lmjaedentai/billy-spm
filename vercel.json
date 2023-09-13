@@ -1,14 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "countdown",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "countdown.py"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/countdown" }
   ]
 }
